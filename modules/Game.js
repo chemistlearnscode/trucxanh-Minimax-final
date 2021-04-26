@@ -282,7 +282,7 @@ export class Game extends Node {
         // console.log(this.children);
         if (this.score <= 0) {
             gameOver.active = true;
-            for (let i = 3; i < 24; i++) {
+            for (let i = 5; i < 25; i++) {
                 this.children[i].active = false;
             }
         }
@@ -295,7 +295,7 @@ export class Game extends Node {
         this.addChild(winner);
         if (this._match === 10) {
             winner.active = true;
-            for (let i = 3; i < 24; i++) {
+            for (let i = 5; i < 25; i++) {
                 this.children[i].active = false;
             }
         }
